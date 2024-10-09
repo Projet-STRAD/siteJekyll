@@ -1,0 +1,29 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Site de démo du projet STRAD (Jekyll)
+email: daphne.mathelier@cnrs.fr
+description: > 
+  Ceci est le site démo du projet STRAD de la MSH Mondes.
+baseurl: "/siteJekyll" # the subpath of your site, e.g. /blog
+url: "localhost:4000"  # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: test
+github_username: DMathelier
+footer: 'MSH Mondes 2024'
+
+# Build settings
+theme: jekyll-theme-console
+
+plugins:
+  - jekyll-feed
+
+header_pages:
+- presentation.md
+- equipe.md
+- contact.md
+
+style: light # dark (default) or hacker
+listen_for_clients_preferred_style: true # true or false (default)
